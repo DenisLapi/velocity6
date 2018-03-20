@@ -3,7 +3,6 @@ body {
 	margin: 0;
 }
 
-// Cover Section
 #cover-section {
 	background: url("../images/cover_background.png") top center no-repeat;
 	.top-navigation {
@@ -198,6 +197,55 @@ body {
 				font-size: 18px;
 				padding: 15px;
 			}
+		}
+	}
+}
+
+#statistics-data {
+	padding: 80px 0;
+	background: #5b439c;
+	.data-box {
+		text-align: center;
+		h3 {
+			margin: 0;
+			font-size: 55px;
+			color: #fff;
+			opacity: 0.5;
+			text-align: center;
+		}
+		h3::after {
+			content: "+";
+			font-weight: 500;
+		}
+		p {
+			margin: 0;
+			padding-bottom: 5px;
+			font-size: 25px;
+			color: #fff;
+			font-weight: 300;
+			border-bottom: 3px solid #1da7ff;
+			display: inline;	
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	#statistics-data {
+		text-align: center;
+		.data-box {
+			display: inline-block;
+			h3 {
+				font-size: 45px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#statistics-data {
+		padding: 50px 0;
+		.data-box {
+			margin-bottom: 50px;
 		}
 	}
 }
