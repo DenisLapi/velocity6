@@ -1,0 +1,137 @@
+body {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+}
+
+// Cover Section
+#cover-section {
+	background: url("../images/cover_background.png") top center no-repeat;
+	.top-navigation {
+		display: flex;
+		align-items: center;
+		margin-top: 20px;
+		.left-side {
+			display: flex;
+			align-items: center;
+			.logo-box {
+				p {
+					font-size: 25px;
+					color: #fff;
+					span {
+						height: 35px;
+						width: 35px;
+						background: #1da7ff;
+						display: inline-block;
+						text-align: center;
+						line-height: 35px;
+						border-radius: 50%;
+					}
+				}
+			}
+			.menu-btn {
+				margin-left: auto;
+				background: #1da7ff;
+				height: 40px;
+				width: 40px;
+				color: #fff;
+				border: none;
+				border-radius: 5px;
+				display: none;
+			}
+			.menu-btn:hover {
+				background: #69c0f7;
+			}
+		}
+		.right-side {
+			margin-left: auto;
+			ul {
+				padding: 0;
+				li {
+					list-style: none;
+					display: inline-block;
+					a {
+						color: #fff;
+						text-decoration: none;
+						padding: 10px 15px;
+						opacity: 0.8;
+						display: inline-block;
+						transition: all 0.3s ease;
+					}
+					a:hover {
+						opacity: 1;
+					}
+					.cta-btn {
+						background: #1da7ff;
+						border-radius: 30px;
+						opacity: 1;
+					}
+					.cta-btn:hover {
+						background: #69c0f7;
+					}
+				}
+			}
+		}
+	}
+	.cover-text {
+		text-align: center;
+		margin: 150px 0;
+		h1, p {
+			color: #fff;
+			font-weight: 400;
+			margin: 0;
+		}
+		h1 {
+			font-size: 40px;
+		}
+		p {
+			font-size: 18px;
+			opacity: 0.8;
+		}
+	}
+}
+
+@media only screen and (max-width: 850px) {
+	#cover-section {
+		.cover-text {
+			margin: 80px 0;
+			h1 { 
+				font-size: 30px;
+			}
+			p {
+				font-size: 15px;
+			}
+		}
+	}
+}
+ 
+@media only screen and (max-width: 640px) {
+    #cover-section {
+    	.top-navigation {
+    		display: block;
+    		.left-side {
+    			.menu-btn {
+					display: block;
+    			}
+    		}
+    		.right-side {
+    			ul {
+    				margin-top: 0;
+    				height: 0;
+    				overflow: hidden;
+    				li {
+    					display: block;
+    					a {
+    						padding-left: 0;
+    					}
+    					.cta-btn, .cta-btn:hover  {
+    						background: none;
+    					}
+    				}
+    			}
+    			.navigation-active {
+    				height: auto;
+    			}
+    		}
+    	}
+    }
+}
