@@ -17,6 +17,7 @@ body {
 				p {
 					font-size: 25px;
 					color: #fff;
+					margin: 0;
 					span {
 						height: 35px;
 						width: 35px;
@@ -74,14 +75,14 @@ body {
 	}
 	.cover-text {
 		text-align: center;
-		margin: 150px 0;
+		margin: 200px 0;
 		h1, p {
 			color: #fff;
 			font-weight: 400;
 			margin: 0;
 		}
 		h1 {
-			font-size: 40px;
+			font-size: 45px;
 		}
 		p {
 			font-size: 18px;
@@ -134,4 +135,69 @@ body {
     		}
     	}
     }
+}
+
+#our-features {
+	text-align: center;
+	h2 {
+		font-size: 30px;
+		color: #262626;
+		display: inline-block;
+		margin: 100px auto;	
+	}
+	h2::after {
+		content: "";
+		width: 50px;
+		height: 5px;
+		background: #5a4496;
+		display: block;
+		margin: auto;
+	}
+	.feature-box {
+		.img-frame {
+			width: 150px;
+			height: 150px;
+			margin: auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		p {
+			font-size: 20px;
+			font-weight: 600;
+			color: #4d4d4d;
+		}
+	}
+	.cta-buttons {
+		margin: 50px 0;
+		.RQ-btn, .LM-btn {
+			padding: 10px 20px;
+			border-radius: 30px;
+			font-size: 20px;
+			text-decoration: none;
+			margin: 0 5px 10px 5px; 
+			display: inline-block;
+		}
+		.RQ-btn {
+			background: #1da7ff;
+			border: 1px solid #1da7ff;
+			color: #fff;
+		}
+		.LM-btn {
+			background: #fff;
+			border: 2px solid #1da7ff;
+			color: #1da7ff;
+		}
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	#our-features {
+		.cta-buttons {	
+			.RQ-btn, .LM-btn {
+				font-size: 18px;
+				padding: 15px;
+			}
+		}
+	}
 }

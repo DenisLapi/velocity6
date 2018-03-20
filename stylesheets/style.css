@@ -23,8 +23,9 @@ body {
 #cover-section .top-navigation .left-side .logo-box p {
   font-size: 25px;
   color: #fff;
+  margin: 0;
 }
-/* line 20, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
 #cover-section .top-navigation .left-side .logo-box p span {
   height: 35px;
   width: 35px;
@@ -34,7 +35,7 @@ body {
   line-height: 35px;
   border-radius: 50%;
 }
-/* line 31, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 #cover-section .top-navigation .left-side .menu-btn {
   margin-left: auto;
   background: #1da7ff;
@@ -45,24 +46,24 @@ body {
   border-radius: 5px;
   display: none;
 }
-/* line 41, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 #cover-section .top-navigation .left-side .menu-btn:hover {
   background: #69c0f7;
 }
-/* line 45, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 #cover-section .top-navigation .right-side {
   margin-left: auto;
 }
-/* line 47, ../sass/style.scss */
+/* line 48, ../sass/style.scss */
 #cover-section .top-navigation .right-side ul {
   padding: 0;
 }
-/* line 49, ../sass/style.scss */
+/* line 50, ../sass/style.scss */
 #cover-section .top-navigation .right-side ul li {
   list-style: none;
   display: inline-block;
 }
-/* line 52, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 #cover-section .top-navigation .right-side ul li a {
   color: #fff;
   text-decoration: none;
@@ -71,84 +72,152 @@ body {
   display: inline-block;
   transition: all 0.3s ease;
 }
-/* line 60, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 #cover-section .top-navigation .right-side ul li a:hover {
   opacity: 1;
 }
-/* line 63, ../sass/style.scss */
+/* line 64, ../sass/style.scss */
 #cover-section .top-navigation .right-side ul li .cta-btn {
   background: #1da7ff;
   border-radius: 30px;
   opacity: 1;
 }
-/* line 68, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 #cover-section .top-navigation .right-side ul li .cta-btn:hover {
   background: #69c0f7;
 }
-/* line 75, ../sass/style.scss */
+/* line 76, ../sass/style.scss */
 #cover-section .cover-text {
   text-align: center;
-  margin: 150px 0;
+  margin: 200px 0;
 }
-/* line 78, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 #cover-section .cover-text h1, #cover-section .cover-text p {
   color: #fff;
   font-weight: 400;
   margin: 0;
 }
-/* line 83, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 #cover-section .cover-text h1 {
-  font-size: 40px;
+  font-size: 45px;
 }
-/* line 86, ../sass/style.scss */
+/* line 87, ../sass/style.scss */
 #cover-section .cover-text p {
   font-size: 18px;
   opacity: 0.8;
 }
 
 @media only screen and (max-width: 850px) {
-  /* line 95, ../sass/style.scss */
+  /* line 96, ../sass/style.scss */
   #cover-section .cover-text {
     margin: 80px 0;
   }
-  /* line 97, ../sass/style.scss */
+  /* line 98, ../sass/style.scss */
   #cover-section .cover-text h1 {
     font-size: 30px;
   }
-  /* line 100, ../sass/style.scss */
+  /* line 101, ../sass/style.scss */
   #cover-section .cover-text p {
     font-size: 15px;
   }
 }
 @media only screen and (max-width: 640px) {
-  /* line 109, ../sass/style.scss */
+  /* line 110, ../sass/style.scss */
   #cover-section .top-navigation {
     display: block;
   }
-  /* line 112, ../sass/style.scss */
+  /* line 113, ../sass/style.scss */
   #cover-section .top-navigation .left-side .menu-btn {
     display: block;
   }
-  /* line 117, ../sass/style.scss */
+  /* line 118, ../sass/style.scss */
   #cover-section .top-navigation .right-side ul {
     margin-top: 0;
     height: 0;
     overflow: hidden;
   }
-  /* line 121, ../sass/style.scss */
+  /* line 122, ../sass/style.scss */
   #cover-section .top-navigation .right-side ul li {
     display: block;
   }
-  /* line 123, ../sass/style.scss */
+  /* line 124, ../sass/style.scss */
   #cover-section .top-navigation .right-side ul li a {
     padding-left: 0;
   }
-  /* line 126, ../sass/style.scss */
+  /* line 127, ../sass/style.scss */
   #cover-section .top-navigation .right-side ul li .cta-btn, #cover-section .top-navigation .right-side ul li .cta-btn:hover {
     background: none;
   }
-  /* line 131, ../sass/style.scss */
+  /* line 132, ../sass/style.scss */
   #cover-section .top-navigation .right-side .navigation-active {
     height: auto;
+  }
+}
+/* line 140, ../sass/style.scss */
+#our-features {
+  text-align: center;
+}
+/* line 142, ../sass/style.scss */
+#our-features h2 {
+  font-size: 30px;
+  color: #262626;
+  display: inline-block;
+  margin: 100px auto;
+}
+/* line 148, ../sass/style.scss */
+#our-features h2::after {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background: #5a4496;
+  display: block;
+  margin: auto;
+}
+/* line 157, ../sass/style.scss */
+#our-features .feature-box .img-frame {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 165, ../sass/style.scss */
+#our-features .feature-box p {
+  font-size: 20px;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+/* line 171, ../sass/style.scss */
+#our-features .cta-buttons {
+  margin: 50px 0;
+}
+/* line 173, ../sass/style.scss */
+#our-features .cta-buttons .RQ-btn, #our-features .cta-buttons .LM-btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 5px 10px 5px;
+  display: inline-block;
+}
+/* line 181, ../sass/style.scss */
+#our-features .cta-buttons .RQ-btn {
+  background: #1da7ff;
+  border: 1px solid #1da7ff;
+  color: #fff;
+}
+/* line 186, ../sass/style.scss */
+#our-features .cta-buttons .LM-btn {
+  background: #fff;
+  border: 2px solid #1da7ff;
+  color: #1da7ff;
+}
+
+@media only screen and (max-width: 450px) {
+  /* line 197, ../sass/style.scss */
+  #our-features .cta-buttons .RQ-btn, #our-features .cta-buttons .LM-btn {
+    font-size: 18px;
+    padding: 15px;
   }
 }
